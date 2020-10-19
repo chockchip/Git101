@@ -1,0 +1,44 @@
+1. Initial repository
+
+
+2. Branch
+git branch --> check all branch on local
+git checkout "branchName" --> Change branch to local/remote branch
+
+3. Create branch
+git checkout -b "bracnhName" --> Create new bracnh with checkout
+git branch "branchName" --> Create branch without checkout
+
+4. Delete branch
+git push --delete origin "branchName" --> Delete remote branch
+git push -d "branchName" --> Delete local branch
+
+5. Pull change remote
+git pull origin "branchName" --> pull change from remote to current local branch 
+
+6. Push
+git push origin "branchName" --> Push the local to remote with the same branch
+git push origin localName:remoteName --> Push specific local to specific remote repository
+
+7. Merge
+- git merge "branchFeature" --> Merge feature branch to current checkout branch
+
+8. Checkout 
+git checkout <hash> --> Checkout with specific commit
+
+9. Revert
+git revert <hash> --> Revert all commit until specific commit
+# After revert have to do commit again
+
+10. Reset
+git reset --hard                --> Clear everything that does not commit
+git clean --fd
+
+11. Log
+git log --oneline --decorate --graph
+
+12. Stash
+- git stash save "stashName"
+- git stash list                --> Show stash list
+- git stash pop stash@{n}       --> Apply stash and remove stash from the list
+- git stash apply stash@{n}     --> Apply stash and remove stash from the lise
