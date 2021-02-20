@@ -8,6 +8,9 @@ git config --global user.email "your-email@example.com"
 git config --global user.name
 git config --global user.email
 
+4. Create local git
+git init
+
 4. Clone project
 git clone https://github.com/dutylabs/git101
 
@@ -32,6 +35,9 @@ $ git commit -m "Added myself to the index.html page"
 $ git pull origin master
 # Push your changes
 $ git push -u origin new-feature-branch
+
+9. git remove file from add
+git rm --cached <file_name>
 
 5. Pull change remote
 git pull origin "branchName" --> pull change from remote to current local branch 
@@ -66,3 +72,8 @@ git log --oneline --decorate --graph
 13. Check status
 - git status
 
+14. brnch history by graph
+- git lg
+
+15. branch history
+- git log
