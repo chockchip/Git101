@@ -2,6 +2,7 @@
 
 2. Setup username and email
 git config --global user.name "rusucosmin" #change this to yours
+git config --global user.email "your-email@example.com"
 
 3. Confirm your username and email
 git config --global user.name
