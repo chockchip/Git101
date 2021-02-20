@@ -1,17 +1,36 @@
 1. Initial repository
 
+2. Setup username and email
+git config --global user.name "rusucosmin" #change this to yours
 
-2. Branch
+3. Confirm your username and email
+git config --global user.name
+git config --global user.email
+
+4. Clone project
+git clone https://github.com/dutylabs/git101
+
+5. Branch
 git branch --> check all branch on local
 git checkout "branchName" --> Change branch to local/remote branch
 
-3. Create branch
+6. Create branch
 git checkout -b "bracnhName" --> Create new bracnh with checkout
 git branch "branchName" --> Create branch without checkout
 
-4. Delete branch
+7. Delete branch
 git push --delete origin "branchName" --> Delete remote branch
 git push -d "branchName" --> Delete local branch
+
+8. add, commit and push your changes
+# add all your changes
+$ git add .
+# commit the changes
+$ git commit -m "Added myself to the index.html page"
+# get the latest changes from master
+$ git pull origin master
+# Push your changes
+$ git push -u origin new-feature-branch
 
 5. Pull change remote
 git pull origin "branchName" --> pull change from remote to current local branch 
@@ -42,3 +61,7 @@ git log --oneline --decorate --graph
 - git stash list                --> Show stash list
 - git stash pop stash@{n}       --> Apply stash and remove stash from the list
 - git stash apply stash@{n}     --> Apply stash and remove stash from the lise
+
+13. Check status
+- git status
+
